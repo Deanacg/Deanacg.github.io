@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Modified SR Latch</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt style2">
+					<li><a href="index.html" class="button">Menu</a></li>
+				</header>
+
+				<!-- Menu
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+				-->
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>"Modified SR Latch"</h1>
+									</header>
+									<span class="image main">
+										<img src="images/srlatch/4eo7u9.gif" width="450" height="550" alt="" data-position="center center" />
+									</span>
+								</div>
+							</section>
+
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/srlatch/SRlatch2.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Plan</h3>
+											</header>
+											<p>
+												My plan with this project was to design a circuit with one input which determines one output, such that when the input “button” is pressed, the output is inverted.
+												<br><br/>
+												I began my design with the common NOR gate SR latch design as my base. I knew my circuit needed to combine both the set and reset input of the SR latch while also making sure neither are high at the same time.
+											</p>
+										</div>
+									</div>
+								</section>
+							
+								<section>
+									<a class="image">
+										<img src="images/srlatch/SRlatch3.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Process</h3>
+											</header>
+											<p>The solution to this was simple, since, for example, if output Q is high, that output signifies that Q’s respective NOR gate is ready to be set low when either of it’s two inputs is set high again.
+												<br><br/>
+												Therefore, the solution is to use AND gates to make sure a NOR gate in the SR-latch receives the now singular input, only when that NOR gate’s output is high.
+												<br><br/>
+												In retrospect, this “modified” SR latch design is just a clockless T-flip-flop. At the time of this circuit’s making I was not familiar with the functions of a T-flip-flop, but understood latches, and I understood how to use the basic SR latch to achieve my goal of one input to control the output.
+											</p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a class="image">
+										<img src="images/srlatch/SRlatch4.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Input</h3>
+											</header>
+											<p>This part of the circuit is my experiment to make the input a bit more exciting than just a button. The coil is wired to the base of a Darlington configuration with three transistors so that when the coil is pressed with a finger, the very low voltage created is amplified by the configuration and inputted to the T-flip flop.
+												</p>
+										</div>
+									</div>
+								</section>
+
+							</section>
+
+					</div>
+
+				
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="actions fit">
+								<li><a href="index.html" class="button fit">Menu</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

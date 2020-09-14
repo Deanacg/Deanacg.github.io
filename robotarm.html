@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>4-Axis Robotic Arm by Dean</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+							<li><a href="index.html" class="button">Menu</a></li>
+					</header>
+
+	
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+                                <h1>4-Axis Robotic Arm</h1>
+							</header>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One 
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/cTMkrmpe-aM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</header>
+								</div>
+							</section> -->
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<img src="images/Robotic Arm/vidcomingsoon.PNG" width="650" height="500" alt="" data-position="top center" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Plan</h3>
+											</header>
+                                            <p>During the construction of my ALU, I learned about the FPGA, which my Digital Design class from the semester previous had failed to teach me about. My next project goal then became to build something powered by an FPGA in order to continue my practice of hardware design while avoiding the use of breadboards, which after doing many projects with the breadboard, I became temporarily disinterested in doing another.</p>
+                                            <p>I figured robotic arms are cool (among the few other project ideas I was considering) and would serve as a perfect first project for my introduction to the world of FPGA’s.</p>
+                                            <p>I decided I wanted a retractable arm design and an arm that could rise above or below its surface level so that it could easily be mounted to a car or something. I found no similar robotic arm on the internet, so I decided to pioneer and proceed with the design because it’s cool.</p>
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<a class="image">
+										<img src="images/Robotic Arm/botpic_3.jpg" width="450" height="380" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Researching the Problem</h3>
+											</header>
+											<p>For my first FPGA project, I figured the cheap “RioRand EP2C5T144 Altera Cyclone II FPGA Mini Development Board” would suffice, and it did perfectly! With 58% of the logic elements to spare after compilation, and more than enough I/O for my servos. I wanted the IR receiver functions of the robot to also be controlled by the FPGA, but after much research I found pretty much no resources of other people doing the same. I came to the conclusion that the FPGA would have to be made into some sort of analog to digital converter for it to interpret the IR receiver, because of this and my limited time frame and FPGA experience, I opted to using an Arduino nano for IR receiver inputs and outputs to the FPGA.</p> 
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<a class="image">
+										<video width="620" height="500" controls autoplay loop muted>
+											<source src="images/Robotic Arm/robot_vid_1.mp4" type="video/mp4">
+										  </video>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Developing the Solution</h3>
+											</header>
+											<p>This robot is constructed with random planks of wood I bought from Michaels craft store and Gorilla Glue epoxy, along with 8 metal gear Longrunner servo motors and wires I had around. The servos are powered by a 10 amp peak battery eliminator circuit so that my servos could draw as much current as they desire.</p>
+											<p>I chose wood because I wanted the robot to be as sturdy as possible, and it certainly is. I’m no machinist, but I had a hand rotary tool, so I purchased some saw blades and got to carving. </p>
+										</div>
+									</div>
+                                </section>
+                                
+                                <section>
+									<a class="image">
+										<video width="620" height="500" controls autoplay loop muted>
+											<source src="images/Robotic Arm/robot_vid_2.mp4" type="video/mp4">
+										  </video>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>In Retrospect</h3>
+											</header>
+                                            <p>The weakest link to my arm design is my servo motors. The small metal gear ones are strong but not strong enough. Unfortunately, this arm can’t really carry anything over 20grams, which is very light. If I were to re-create this arm, I would use way thinner wood, or a light plastic, so that my servos don’t have to use all their power supporting themselves instead of the load. Or I would use stronger servo motors, but the stronger ones are usually much heavier, so I would still have to consider that in my design.</p>
+                                            <p>Heres the VHDL code: https://github.com/Deanacg/VHDL-code-for-Robotic-Arm-by-Dean</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Additional Images</h2>
+									</header>
+									<img src="images/Robotic Arm/botpic_2.jpg" width="650" height="450" alt="" data-position="top center" />
+									<img src="images/Robotic Arm/botpic_1.jpg" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/Robotic Arm/botpic_4.jpg" width="650" height="450" alt="" data-position="top center" />
+									<img src="images/Robotic Arm/compilation_report.PNG" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/Robotic Arm/prebot_pic_1.jpg" width="550" height="450" alt="" data-position="top center" />
+									<img src="images/Robotic Arm/prebot_pic_2.jpg" width="550" height="450" alt="" data-position="top center" />
+									
+								</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="actions fit">
+							<li><a href="index.html" class="button fit">Menu</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

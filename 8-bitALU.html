@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>8-bit ALU by Dean</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+							<li><a href="index.html" class="button">Menu</a></li>
+					</header>
+
+	
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+                                <h1>8-bit Arithmetic Logic Unit</h1>
+							</header>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One 
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/cTMkrmpe-aM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</header>
+								</div>
+							</section> -->
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/cTMkrmpe-aM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Plan</h3>
+											</header>
+											<p>In order to fasten in my mind the things I have learned from a previous semester of Digital Design class, and further explore my interest in the field of hardware design, I decided to design and build a breadboard based eight bit Arithmetic Logic Unit.</p>
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<a class="image">
+										<img src="images/8-bit ALU/bens_alu.PNG" width="250" height="450" alt="" data-position="top center" />
+									</a>
+									<a class="image">
+										<img src="images/8-bit ALU/ALUfullfront.PNG" width="350" height="450" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Researching the Problem</h3>
+											</header>
+											<p>The goal for this project was to go beyond the instruction of Ben Eater, and produce an ALU which could not only add and subtract, but also multiply and divide.</p> 
+										</p> A content creator by the name of Ben Eater on YouTube, has created a video series constructing an eight bit computer across multiple breadboards, which has become popular among digital design enthusiasts. In this series Ben constructs an ALU which functions as a binary adder and subtractor for his breadboard based computer. Ben introduced to me three very important ICs which are heavily implemented in my ALU project. These ICs are the 74LS283 4-bit Binary Adder, the 54LS245 Octal Bus Transceiver, and the 74LS173 4-bit D-type Resister. </p>
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<a class="image">
+										<img src="images/8-bit ALU/ALUschematic.png" width="350" height="580" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Developing the Solution</h3>
+											</header>
+											<p>Arithmetic begins after registers A and B have been loaded with their respective operands. The addition of the ALU is taken care of by the coupled 4-bit Binary Adders, located in the center of the mass wire cluster on the board. For subtraction, XOR gate ICs are used for the logic inversion of register B, and the carry-in of the adder is set high, in order to apply the two’s complement subtraction method.</p>
+											<p>Multiplication is accomplished by adding the number from register A an amount of register B times. For division, the operand of register B is subtracted into register A repeatedly until register A becomes zero. The total number of subtractions is counted which is the answer to the division. Because multiplication and division require repeated use of the 74LS283 adder, multiple clock cycles are required for the completion of an operation. </p>
+											<p>The user interface consists of an eight-input dip switch and an attached input station for the bus lines at the top of the ALU for easy initialization of registers A and B. </p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Additional Images</h2>
+									</header>
+									<img src="images/8-bit ALU/ALUcoolpic2.jpg" width="650" height="450" alt="" data-position="top center" />
+									<img src="images/8-bit ALU/ALUcoolpic1.jpg" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/8-bit ALU/ALUcoolpic3.jpg" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/8-bit ALU/ALUinit1.jpg" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/8-bit ALU/ALUinit2.jpg" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/8-bit ALU/ALUinit3.jpg" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/8-bit ALU/ALUinit4.jpg" width="450" height="450" alt="" data-position="top center" />
+									<img src="images/8-bit ALU/ALUinit5.jpg" width="450" height="450" alt="" data-position="top center" />
+									
+								</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="actions fit">
+							<li><a href="index.html" class="button fit">Menu</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
